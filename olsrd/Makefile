@@ -6,13 +6,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=olsrd
-PKG_SOURCE_DATE:=2022-03-18
+PKG_SOURCE_DATE:=2022-04-22
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/OLSR/olsrd.git
-PKG_SOURCE_VERSION:=1e771b4d31e36f9ffd0a04c3f8f83abb803ec309
-PKG_MIRROR_HASH:=2b238b179bc873902a0d094c0d3e43e0a373710763bdca4b6fec5eed431d4a8d
+PKG_SOURCE_URL:=https://github.com/Akira25/olsrd.git
+PKG_SOURCE_VERSION:=c226564bb873c47028473479b0dd7bede5bbda42
+#PKG_MIRROR_HASH:=2b238b179bc873902a0d094c0d3e43e0a373710763bdca4b6fec5eed431d4a8d
 
 PKG_MAINTAINER:=Nick Hainke <vincent@systemli.org>
 PKG_BUILD_PARALLEL:=0
@@ -100,7 +100,7 @@ endef
 define Package/olsrd-mod-mdns
   $(call Package/olsrd/template)
   DEPENDS:=olsrd
-  TITLE:=MDNS/Zeroconf/Bonjour packet distribution 
+  TITLE:=MDNS/Zeroconf/Bonjour packet distribution
 endef
 
 define Package/olsrd-mod-nameservice
